@@ -1,0 +1,495 @@
+@media screen and (min-width: 1000px) {
+
+    /*------------------------------------------------------------------------------ 1000PX GERAL  ------------------------------------------------------------------------------*/
+    .container {
+        max-width: min(100vw, 1920px);
+    }
+
+    .container_padding {
+        padding: 0 6vw 0 6vw;
+    }
+
+    section {
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    .section_title {
+        font-size: 35px;
+        margin-bottom: 5vw;
+    }
+
+    button {
+        font-size: max(16px, 1.1vw);
+        width: min(15.9vw, 300px);
+    }
+
+    /*------------------------------------------------------------------------------ 1000PX HEADER  ------------------------------------------------------------------------------*/
+    .logo {
+        width: 14.9vw;
+        max-width: 200px;
+    }
+
+    .menu,
+    nav {
+        display: block;
+    }
+
+    header .menu_icon,
+    .socialdiv,
+    header #touch {
+        display: none !important;
+    }
+
+    header ul li {
+        margin-left: 2vw;
+        font-weight: 500;
+    }
+
+    header li a:hover {
+        border-top: 3px solid white;
+    }
+
+    /*------------------------------------------------------------------------------ 1000PX PRINCIPAL  ------------------------------------------------------------------------------*/
+    #principal,
+    #principal>:first-child {
+        height: 35vw;
+        padding: 0;
+        max-height: 500px;
+    }
+
+    #principal .esquerda {
+        width: 15%;
+        height: 100% !important;
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), var(--bg-color) 45%);
+        font-weight: 300;
+    }
+
+    .esquerda hr {
+        height: 50px;
+        margin: 20px 0;
+    }
+
+    .esquerda .icon {
+        margin: 2px 0;
+    }
+
+    .texto_vertical {
+        writing-mode: vertical-rl;
+        -webkit-transform: rotate(180deg);
+        /* Saf3.1+, Chrome */
+        -moz-transform: rotate(180deg);
+        /* FF3.5+ */
+        -ms-transform: rotate(180deg);
+        /* IE9 */
+        -o-transform: rotate(180deg);
+        /* Opera 10.5 */
+        transform: rotate(180deg);
+
+        font-size: max(16px, 1.1vw);
+    }
+
+    #principal>:first-child {
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    #principal>:first-child>:nth-child(2) {
+        /* width: 200px; */
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+    #principal>:first-child>:nth-child(2) * {
+        margin: 5px 0;
+    }
+
+    #principal h3 {
+        /* font-size: 35px; */
+        font-size: min(3.5vw, 65px);
+    }
+
+    #principal p {
+        font-weight: 100;
+        line-height: min(2.7vw, 35px);
+
+        font-size: min(2vw, 30px);
+        /* font-size: 20px; */
+        max-width: 45vw;
+
+    }
+
+    /*------------------------------------------------------------------------------ 1000PX PROJETOS  ------------------------------------------------------------------------------*/
+
+    .caroussel1 {
+        position: relative;
+        display: block;
+        height: 250px;
+        max-height: 250px;
+    }
+
+    .bt__caroussel_direita,
+    .bt__caroussel_esquerda {
+        display: block;
+        top: 80%;
+    }
+
+    .bt__caroussel_direita:hover,
+    .bt__caroussel_esquerda:hover {
+        border: none;
+    }
+
+    .bt__caroussel_direita {
+        right: 5%;
+    }
+
+    .bt__caroussel_esquerda {
+        left: 3%;
+    }
+
+    .item_header {
+        font-size: 100%;
+    }
+
+    .item_descri {
+        height: 180px;
+        font-size: 120%;
+    }
+
+    /*------------------------------------------------------------------------------ 1000PX SERVIÇOS ------------------------------------------------------------------------------*/
+
+    #servicos>:first-child>:nth-child(2) {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #servicos h4 {
+        font-size: max(20px, 1.1vw);
+        margin-bottom: max(10px, 1.1vw);
+    }
+
+    #servicos li,
+    #servicos p {
+        font-size: max(18px, 1.1vw);
+    }
+
+    #servicos p {
+        width: 42vw;
+        max-width: 450px;
+    }
+
+    #servicos ul {
+        margin-bottom: 1.2vw;
+    }
+
+    #servicos>:first-child>:nth-child(2)>:first-child {
+        align-items: flex-start !important;
+        /* border: 1px solid yellow; */
+    }
+
+    #servicos>:first-child>:nth-child(2)>:nth-child(1) {
+        margin-right: 20px;
+    }
+
+    #servicos>:first-child>:nth-child(2)>:nth-child(2) {
+        background: url(../img/sec_services.webp) no-repeat;
+        background-size: cover;
+        width: 60vw;
+        height: 29.32vw;
+        max-width: 650px;
+        max-height: 317.73px;
+    }
+
+    #servicos ul,
+    #servicos li {
+        list-style: disc;
+    }
+
+    /*------------------------------------------------------------------------------ 1000PX PROJETOS  ------------------------------------------------------------------------------*/
+
+    #projetos {
+        margin-top: 0;
+        /* height: 350px; */
+        height: 37vw;
+        max-height: 570px;
+    }
+
+    .caroussel1 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .caroussel1 {
+        height: 400px;
+    }
+
+    .bt__caroussel_direita,
+    .bt__caroussel_esquerda {
+        display: none;
+    }
+
+    .carousel__slide,
+    .carousel_img {
+        max-width: 25vw;
+    }
+
+
+    .item_header {
+        font-size: 100%;
+    }
+
+    .item_descri {
+        height: 260px;
+        font-size: 120%;
+    }
+
+    /*------------------------------------------------------------------------------ 1000PX CONTATO  ------------------------------------------------------------------------------*/
+
+    #contato .section_title {
+        margin-bottom: 2vw;
+    }
+
+
+    #contato form input,
+    #contato textarea {
+        width: 43vw;
+        max-width: 430px;
+    }
+
+}
+
+@media screen and (max-width: 999px) {
+
+    /*------------------------------------------------------------------------------ 600PX GERAL  ------------------------------------------------------------------------------*/
+    .container {
+        max-width: 100vw;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .button {
+        font-size: 18px;
+        min-width: 178px;
+    }
+
+    /* +++++++++++++++++++++++++ Header - Menu  +++++++++++++++++++++++++ */
+    header .menu_icon,
+    .socialdiv,
+    header #touch {
+        display: block !important;
+    }
+
+    header .logo {
+        max-width: 200px;
+    }
+
+    nav>div:first-of-type {
+        position: absolute;
+    }
+
+    header span {
+        padding: 0;
+        background: transparent;
+        color: white;
+        font-size: 1.2em;
+        font-variant: small-caps;
+        cursor: pointer;
+        display: block;
+
+
+        width: 80px;
+
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    header ul {
+        margin-top: 15px;
+    }
+
+    header ul,
+    header ul li {
+        background: #212121;
+
+        font-size: 17px;
+        width: 20px;
+    }
+
+    header ul li:hover {
+        font-weight: bold;
+    }
+
+
+    header .slide {
+        clear: both;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        text-align: left;
+        transition: height .4s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .slide li {
+        padding: 5px;
+    }
+
+    header #touch {
+        position: absolute;
+        opacity: 0;
+        height: 0px;
+    }
+
+    header #touch:checked+.slide {
+        height: 130px;
+    }
+
+    .menu_right {
+        border: 1px solid blue;
+    }
+
+    .menu_right * {
+        border: 1px solid rgb(196, 100, 100);
+    }
+
+    /*------------------------------------------------------------------------------ 600PX SERVICOS  ------------------------------------------------------------------------------*/
+
+
+    /* +++++++++++++++++++++++++ PRINCIPAL  +++++++++++++++++++++++++ */
+    .esquerda {
+        display: none;
+    }
+
+    #principal h3 {
+        font-size: 30px;
+        font-size: min(8vw, 40px);
+        margin-bottom: 15px;
+    }
+
+    #principal p {
+        font-size: min(4.4vw, 22px);
+        max-width: max(370px, 60vw);
+        margin-bottom: 15px;
+
+    }
+
+    #servicos {
+        padding-bottom: 15px;
+    }
+
+    /*------------------------------------------------------------------------------ 600PX PROJETOS  ------------------------------------------------------------------------------*/
+    #projetos {
+        margin-top: 0;
+    }
+
+    .caroussel1 {
+        position: relative;
+        display: block;
+        min-height: 200px;
+        height: 45.8vw;
+    }
+
+    .carousel__slide,
+    .carousel_img {
+        width: 33vw;
+        min-height: 185px;
+        height: auto;
+    }
+
+    .bt__caroussel_direita,
+    .bt__caroussel_esquerda {
+        display: block;
+        top: 90%;
+    }
+
+    .bt__caroussel_direita:hover,
+    .bt__caroussel_esquerda:hover {
+        border: none;
+    }
+
+    .bt__caroussel_direita {
+        right: 5%;
+    }
+
+    .bt__caroussel_esquerda {
+        left: 3%;
+    }
+
+    .item_header {
+        font-size: 100%;
+    }
+
+    .item_descri {
+        height: max(115px, 20vw);
+        font-size: 100%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    /*------------------------------------------------------------------------------ 375PX GERAL  ------------------------------------------------------------------------------*/
+
+    .container {
+        max-width: 375px;
+    }
+
+    /*------------------------------------------------------------------------------ 375PX PROJETOS  ------------------------------------------------------------------------------*/
+
+    .caroussel1 {
+        position: relative;
+        display: block;
+        max-height: 200px;
+    }
+
+    .caroussel1 {
+        height: 300px;
+    }
+
+    .carousel__slide,
+    .carousel_img {
+        height: 185px;
+    }
+
+    .bt__caroussel_direita:hover,
+    .bt__caroussel_esquerda:hover {
+        border: none;
+    }
+
+    .bt__caroussel_direita {
+        right: 5%;
+    }
+
+    .bt__caroussel_esquerda {
+        left: 3%;
+    }
+
+}
+
+@media screen and (max-width: 710px) {
+
+    .bt__caroussel_direita,
+    .bt__caroussel_esquerda {
+        display: block;
+        top: 85%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .bt__caroussel_direita,
+    .bt__caroussel_esquerda {
+        display: block;
+        top: 75%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .item_descri {
+        display: none;
+    }
+}
